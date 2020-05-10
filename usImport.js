@@ -139,6 +139,15 @@
 			
 		});
 		
+		/*added code*/
+		d3.selectAll("#foodChoices td").on("mouseover", function(){
+			//foodChosen = getFoodType();
+			foodChosen[0] = $(this).attr('id');
+			addCircles(year, foodChosen);
+			
+			
+		});
+		
 
 		
 		function getFoodType(){
